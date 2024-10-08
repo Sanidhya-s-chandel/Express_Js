@@ -1,7 +1,10 @@
 const express = require("express")
 const app = express()
 
+const blog = require("./routes/blog")
+
 app.use(express.static("public")) // to use Post request use this line
+app.use("/blog",blog)
 
 // get request is a basic request from the browser through URL, 8192 bytes limit
 
