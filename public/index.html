@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTING POST REQUEST</title>
+</head>
+<body>
+    <!-- this file was made to test the methods in app2.js file -->
+    <script>
+        async function testPost(){
+            let a = await fetch("/delete",{method: "DELETE"})
+            let b = await a.text();
+            console.log(b);
+        }
+
+        testPost()
+    </script>
+</body>
+</html>
